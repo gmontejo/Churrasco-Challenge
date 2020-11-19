@@ -1,0 +1,188 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(55, 12, 61, 1) 0%,
+    rgba(54, 50, 108, 1) 100%
+  );
+  color: #444;
+}
+
+.btn.btn-churrasco {
+  font-weight: bold;
+  color: #dbdbdb;
+  background-color: rgb(54, 50, 108);
+  border-color: rgb(54, 50, 108);
+  width: fit-content;
+}
+
+.btn.btn-churrasco:hover {
+  background-color: rgb(176, 171, 240);
+  background-color: rgb(176, 171, 240);
+}
+
+.btn.btn-logout {
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(109, 102, 202);
+  border-color: rgb(187, 185, 216);
+}
+
+/* NAVBAR */
+.navbar img {
+  filter: drop-shadow(0 0 5px white);
+}
+
+.navbar .navbar-toggler {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* LOGIN */
+
+input.form-control:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
+
+input.form-control::placeholder {
+  color: rgb(138, 138, 138);
+}
+
+.form-check {
+  margin-left: 0.5rem;
+  color: #949494;
+  font-size: 0.7rem;
+}
+
+.form-check-input {
+  background-color: blueviolet;
+}
+
+.input-group input.form-control {
+  padding-left: 0;
+  border-left: none;
+  font-weight: 400;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.input-group:first-child:focus-within {
+  box-shadow: 0 -1px 6px 0 rgb(189, 163, 252);
+}
+
+.input-group:focus-within {
+  box-shadow: 0 2px 4px 0 rgb(189, 163, 252);
+}
+
+.input-group .input-group-text {
+  background-color: white;
+  border-right: none;
+}
+
+.input-group-text i {
+  color: rgb(138, 138, 138);
+}
+
+.login-error-modal {
+  padding: 2rem;
+}
+
+.modal-content {
+  overflow: hidden;
+}
+
+/* NAVBAR */
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+/* HOME */
+
+.greetings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 4px black;
+  height: 200px;
+  color: #fff;
+  background-image: url("./img/greetingsBackground.png");
+  background-size: cover;
+  background-position-y: center;
+}
+
+.greetings img {
+  height: 2.5rem;
+  filter: drop-shadow(2px 2px 4px black);
+}
+
+.warning-icon {
+  cursor: pointer;
+  color: #fbff00;
+}
+
+.map-modal {
+  padding: 10px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (min-width: 576px) {
+  .card-columns.modify-columns {
+    column-count: 4;
+  }
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar input {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  height: 2rem;
+  box-shadow: 0 2px 5px 0 #eab4fa;
+}
+
+.search-bar input:focus {
+  outline: none;
+  box-shadow: 0 0 6px 0 inset;
+}
+
+.clear-search-button {
+  cursor: pointer;
+  height: 1rem;
+  margin-left: 5px;
+}
+
+/* CARD */
+
+.card {
+  margin-top: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 14px 0 #eab4fa;
+}
+
+/* Footer */
+
+footer {
+  color: #949494;
+  margin: 1rem;
+}
